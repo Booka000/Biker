@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+
+    <body>
+        <%- include('./partials/nav.ejs')%>
+            <div class="new-renting contet">
+                <form action="/active" method="post">
+                    <label for="title">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="Datetime">Date</label>
+                    <input type="datetime-local" id="Datetime" name="date" erequired>
+                    <label for="Phone-number">Phone number</label>
+                    <input type="text" id="Phone-number" name="phone" placeholder="8 123 456 78 90" required>
+                    <label for="bikes">Pick up address:</label>
+                    <select name="pickupAddress">
+                        <option lang="ru" value="площадь Максима Горького, 6">площадь Максима Горького, 6</option>
+                        <option lang="ru" value="Мануфактурная, 14">Мануфактурная, 14</option>
+                        <option lang="ru" value="Героя Жидкова, 17/2">Героя Жидкова, 17/2</option>
+                        <option lang="ru" value="Тираспольская, 11">Тираспольская, 11</option>
+                    </select>
+                    <br>
+                    <input type="hidden" name="bike" value="<%= bike.name %>" >
+                    <input type="hidden" name="price" value="<%= bike.price %>">
+                    <br>
+                    <button>Rent</button>
+                </form>
+            </div>
+            <%- include('./partials/footer.ejs')%>
+    </body>
+
+</html>

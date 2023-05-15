@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+
+    <body>
+        <%- include('./partials/nav.ejs')%>
+            <div class="content">
+                <div id="bikes">
+                    <a href="/renting/<%=bikes[0]._id%>"><img src="/images/3T.jpg"></a><br>
+                    <div>
+                        <h2>
+                            <%= bikes[0].name %><br>
+                                <%= bikes[0].price %> rub/h
+                        </h2><br>
+                        <small><%= bikes[0].descripe %></small>
+                    </div>
+                </div>
+                <div id="bikes">
+                    <a href="/renting/<%=bikes[1]._id%>"><img src="/images/6KU.jpg"></a>
+                    <div>
+                        <h2>
+                            <%= bikes[1].name %><br>
+                                <%= bikes[1].price %> rub/h
+                        </h2><br>
+                        <small><%= bikes[1].descripe %></small>
+                    </div>
+                </div>
+                <div id="bikes">
+                    <a href="/renting/<%=bikes[2]._id%>"><img src="/images/Baum.jpg"></a>
+                    <div>
+                        <h2>
+                            <%= bikes[2].name %><br>
+                                <%= bikes[2].price %> rub/h
+                        </h2><br>
+                        <small><%= bikes[2].descripe %></small>
+                    </div>
+                </div>
+                <div id="bikes">
+                    <a href="/renting/<%=bikes[3]._id%>" onclick="changevalue(3)"><img src="/images/BH.jpg"></a>
+                    <div>
+                        <h2>
+                            <%=  bikes[3].name %><br>
+                                <%= bikes[3].price %> rub/h
+                        </h2><br>
+                        <small><%= bikes[3].descripe %></small>
+                    </div>
+                </div>
+            </div>
+            <%- include('./partials/footer.ejs')%>
+    </body>
+
+</html>

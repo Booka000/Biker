@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+nav h1 {
+    font-size: 3em;
+}
+
+nav p,
+nav a {
+    color: #777;
+    font-weight: 300;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-blog input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.new-renting label {
+    display: block;
+    margin-top: 24px;
+}
+
+.new-renting button {
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+#counter h1 {
+    font-size: 60px;
+}
+
+.counter {
+    display: flex;
+    font-size: 30px;
+}
+
+#counter button {
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+.time {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.time h2{
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+#bikes{
+    margin: 15px;
+    display: flex;
+}
+
+#bikes div{
+    margin-left: 10px;
+}
+
+#bikes small{
+    color: #777;
+    font-size: 0.9em;
+}
+#bikes h2 {
+    margin: 0;
+    width: 100%;
+}
